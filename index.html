@@ -1,1 +1,432 @@
-PCFET0NUWVBFIGh0bWw+PGh0bWwgbGFuZz0iemgtQ04iIGNsYXNzPSJsaWdodCI+PGhlYWQ+PG1ldGEgY2hhcnNldD0iVVRGLTgiPjxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wIj48dGl0bGU+6YeR5rqQ5p2+6L2m6K6vIOKAlCDkuJPkuJrovabovobmirXmirzotLfmrL7lkqjor6I8L3RpdGxlPjxzY3JpcHQgc3JjPSJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvbnBtL0B0YWlsd2luZGNzcy9icm93c2VyQDQuMy4xL2Rpc3QvaW5kZXguZ2xvYmFsLmpzIj48L3NjcmlwdD48c2NyaXB0IHNyYz0iaHR0cHM6Ly91bnBrZy5jb20vbHVjaWRlQDEuOC4wL2Rpc3QvdW1kL2x1Y2lkZS5taW4uanMiPjwvc2NyaXB0PjxzdHlsZSB0eXBlPSJ0ZXh0L3RhaWx3aW5kY3NzIj4gQHRoZW1lIGlubGluZSB7IC0tY29sb3ItYmFja2dyb3VuZDogdmFyKC0tY29sb3ItYmctcHJpbWFyeSk7IC0tY29sb3ItZm9yZWdyb3VuZDogdmFyKC0tY29sb3ItdGV4dC1wcmltYXJ5KTsgLS1jb2xvci1jYXJkOiB2YXIoLS1jb2xvci1iZy1jYXJkKTsgLS1jb2xvci1jYXJkLWZvcmVncm91bmQ6IHZhcigtLWNvbG9yLXRleHQtcHJpbWFyeSk7IC0tY29sb3ItcHJpbWFyeTogdmFyKC0tY29sb3ItYnJhbmQtcHJpbWFyeSk7IC0tY29sb3ItcHJpbWFyeS1mb3JlZ3JvdW5kOiAjZmZmZmZmOyAtLWNvbG9yLW11dGVkOiB2YXIoLS1jb2xvci1iZy1zZWNvbmRhcnkpOyAtLWNvbG9yLW11dGVkLWZvcmVncm91bmQ6IHZhcigtLWNvbG9yLXRleHQtc2Vjb25kYXJ5KTsgLS1jb2xvci1ib3JkZXI6IHZhcigtLWNvbG9yLWJvcmRlci1kZWZhdWx0KTsgLS1jb2xvci1yaW5nOiB2YXIoLS1jb2xvci1icmFuZC1wcmltYXJ5KTsgLS1yYWRpdXMtc206IHZhcigtLXJhZGl1cy1zbSk7IC0tcmFkaXVzLW1kOiB2YXIoLS1yYWRpdXMtbWQpOyAtLXJhZGl1cy1sZzogdmFyKC0tcmFkaXVzLWxnKTsgfSBAbGF5ZXIgYmFzZSB7IGJvZHkgeyBiYWNrZ3JvdW5kOiB2YXIoLS1jb2xvci1iZy1wcmltYXJ5KTsgY29sb3I6IHZhcigtLWNvbG9yLXRleHQtcHJpbWFyeSk7IH0gdGQsIHRoIHsgQGFwcGx5IGJyZWFrLXdvcmRzOyB3b3JkLWJyZWFrOiBicmVhay1hbGw7IHdvcmQtYnJlYWs6IGF1dG8tcGhyYXNlOyB9IHRoIHsgQGFwcGx5IHdoaXRlc3BhY2Utbm93cmFwOyB9IH0gPC9zdHlsZT48c3R5bGU+IC5uby1zY3JvbGxiYXI6Oi13ZWJraXQtc2Nyb2xsYmFye2Rpc3BsYXk6bm9uZTt9Lm5vLXNjcm9sbGJhcnstbXMtb3ZlcmZsb3ctc3R5bGU6bm9uZTtzY3JvbGxiYXItd2lkdGg6bm9uZTt9W2RhdGEtaWNvbl17ZGlzcGxheTppbmxpbmUtZmxleDthbGlnbi1pdGVtczpjZW50ZXI7anVzdGlmeS1jb250ZW50OmNlbnRlcjstd2Via2l0LW1hc2stc2l6ZTpjb250YWluO21hc2stc2l6ZTpjb250YWluOy13ZWJraXQtbWFzay1yZXBlYXQ6bm8tcmVwZWF0O21hc2stcmVwZWF0Om5vLXJlcGVhdDstd2Via2l0LW1hc2stcG9zaXRpb246Y2VudGVyO21hc2stcG9zaXRpb246Y2VudGVyO2JhY2tncm91bmQtY29sb3I6Y3VycmVudENvbG9yO308L3N0eWxlPjwvaGVhZD48Ym9keT48Y2FudmFzIGlkPSJwYXJ0aWNsZXMtYmciPjwvY2FudmFzPjxuYXYgY2xhc3M9Im5hdi1nbGFzcyI+PGRpdiBjbGFzcz0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIiBzdHlsZT0ibWF4LXdpZHRoOjEyODBweDttYXJnaW46MCBhdXRvO3BhZGRpbmc6dmFyKC0tc3BhY2UtNCkgdmFyKC0tc3BhY2UtMTYpOyI+PGEgaHJlZj0iIyIgY2xhc3M9Im5hdi1sb2dvIiBzdHlsZT0iZm9udC1zaXplOnZhcigtLXRleHQtbGcpO3RleHQtZGVjb3JhdGlvbjpub25lOyI+6YeR5rqQ5p2+6L2m6K6vPC9hPjxkaXYgY2xhc3M9ImZsZXggaXRlbXMtY2VudGVyIiBzdHlsZT0iZ2FwOnZhcigtLXNwYWNlLTgpOyI+PGEgaHJlZj0iIyIgY2xhc3M9Im5hdi1saW5rIiBkYXRhLW5hdi1rZXk9ImhvbWUiIGRhdGEtZG9tLWlkPSJuYXYtaG9tZSIgZGF0YS1hY3RpdmU9InRydWUiPummlumhtTwvYT48YSBocmVmPSJwcm9qZWN0cy5odG1sIiBjbGFzcz0ibmF2LWxpbmsiIGRhdGEtbmF2LWtleT0ic2VydmljZXMiIGRhdGEtZG9tLWlkPSJuYXYtc2VydmljZXMiPuacjeWKoeS8mOWKvzwvYT48YSBocmVmPSJhYm91dC5odG1sIiBjbGFzcz0ibmF2LWxpbmsiIGRhdGEtbmF2LWtleT0iY2FzZXMiIGRhdGEtZG9tLWlkPSJuYXYtY2FzZXMiPuaIkOWKn+ahiOS+izwvYT48L2Rpdj48L2Rpdj48L25hdj48bWFpbiBpZD0iYXBwLWNvbnRlbnQiIGNsYXNzPSJtaW4taC1zY3JlZW4iIHN0eWxlPSJiYWNrZ3JvdW5kOnZhcigtLWNvbG9yLWJnLXByaW1hcnkpO3Bvc2l0aW9uOnJlbGF0aXZlO3otaW5kZXg6MTsiPjxzZWN0aW9uIGNsYXNzPSJoZXJvLXNlY3Rpb24iIHN0eWxlPSJtaW4taGVpZ2h0OjEwMHZoO2Rpc3BsYXk6ZmxleDtmbGV4LWRpcmVjdGlvbjpjb2x1bW47YWxpZ24taXRlbXM6Y2VudGVyO2p1c3RpZnktY29udGVudDpjZW50ZXI7dGV4dC1hbGlnbjpjZW50ZXI7cGFkZGluZzp2YXIoLS1zcGFjZS0xNikgdmFyKC0tc3BhY2UtNikgdmFyKC0tc3BhY2UtMTIpO3Bvc2l0aW9uOnJlbGF0aXZlO292ZXJmbG93OmhpZGRlbjsiPjxkaXYgY2xhc3M9Imhlcm8tb3JiIGhlcm8tb3JiLTEiPjwvZGl2PjxkaXYgY2xhc3M9Imhlcm8tb3JiIGhlcm8tb3JiLTIiPjwvZGl2PjxkaXYgY2xhc3M9Imhlcm8tb3JiIGhlcm8tb3JiLTMiPjwvZGl2PjxoMSBjbGFzcz0iZ3JhZGllbnQtdGV4dC1hbmltYXRlZCBoZXJvLWhlYWRpbmciIHN0eWxlPSJmb250LXNpemU6dmFyKC0tdGV4dC03eGwpO2ZvbnQtd2VpZ2h0OnZhcigtLWZvbnQtd2VpZ2h0LWJvbGQpO2xldHRlci1zcGFjaW5nOnZhcigtLXRyYWNraW5nLXRpZ2h0ZXIpO2xpbmUtaGVpZ2h0OnZhcigtLWxlYWRpbmctdGlnaHQpO21hcmdpbjowIDAgdmFyKC0tc3BhY2UtNik7Ij4g6L2m6L6G5oq15oq86LS35qy+IDwvaDE+PHAgc3R5bGU9ImZvbnQtc2l6ZTp2YXIoLS10ZXh0LXhsKTtjb2xvcjp2YXIoLS10ZXh0LXNlY29uZGFyeSk7bWF4LXdpZHRoOjYwMHB4O2xpbmUtaGVpZ2h0OnZhcigtLWxlYWRpbmctcmVsYXhlZCk7bWFyZ2luOjAgYXV0byB2YXIoLS1zcGFjZS0xMCk7Ij4g5q2j6KeE6YeR6J6N5py65p6E5ZCI5L2c77yM6LS5546H6YCP5piOMTAlLTIzLjk5Je+8jOW+geS/oeS4jeS9s+S5n+iDveWKniA8L3A+PGRpdiBjbGFzcz0iZmxleCBmbGV4LXdyYXAgaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIiBzdHlsZT0iZ2FwOnZhcigtLXNwYWNlLTQpO21hcmdpbi1ib3R0b206dmFyKC0tc3BhY2UtMTYpOyI+PGEgaHJlZj0iYWJvdXQuaHRtbCIgZGF0YS1kb20taWQ9ImN0YS1jYXNlcyIgY2xhc3M9Imdsb3ctaG92ZXIiIHN0eWxlPSJkaXNwbGF5OmlubGluZS1ibG9jaztwYWRkaW5nOnZhcigtLXNwYWNlLTMpIHZhcigtLXNwYWNlLTgpO2ZvbnQtc2l6ZTp2YXIoLS10ZXh0LWJhc2UpO2ZvbnQtd2VpZ2h0OnZhcigtLWZvbnQtd2VpZ2h0LW1lZGl1bSk7Y29sb3I6I2ZmZjtiYWNrZ3JvdW5kOmxpbmVhci1ncmFkaWVudCgxMzVkZWcsIHZhcigtLWNvbG9yLWdyYWRpZW50LXN0YXJ0KSwgdmFyKC0tY29sb3ItZ3JhZGllbnQtZW5kKSk7Ym9yZGVyLXJhZGl1czp2YXIoLS1yYWRpdXMtZnVsbCk7dGV4dC1kZWNvcmF0aW9uOm5vbmU7dHJhbnNpdGlvbjpib3gtc2hhZG93IHZhcigtLWR1cmF0aW9uLW5vcm1hbCkgdmFyKC0tZWFzZS1vdXQtcXVhcnQpLCB0cmFuc2Zvcm0gdmFyKC0tZHVyYXRpb24tbm9ybWFsKSB2YXIoLS1lYXNlLW91dC1xdWFydCk7Ij4g56uL5Y2z5ZKo6K+iIDwvYT48YSBocmVmPSJwcm9qZWN0cy5odG1sIiBkYXRhLWRvbS1pZD0iY3RhLWNvbnRhY3QiIHN0eWxlPSJkaXNwbGF5OmlubGluZS1ibG9jaztwYWRkaW5nOnZhcigtLXNwYWNlLTMpIHZhcigtLXNwYWNlLTgpO2ZvbnQtc2l6ZTp2YXIoLS10ZXh0LWJhc2UpO2ZvbnQtd2VpZ2h0OnZhcigtLWZvbnQtd2VpZ2h0LW1lZGl1bSk7Y29sb3I6dmFyKC0tdGV4dC1zZWNvbmRhcnkpO2JhY2tncm91bmQ6dHJhbnNwYXJlbnQ7Ym9yZGVyOjFweCBzb2xpZCB2YXIoLS1jb2xvci1ib3JkZXItZGVmYXVsdCk7Ym9yZGVyLXJhZGl1czp2YXIoLS1yYWRpdXMtZnVsbCk7dGV4dC1kZWNvcmF0aW9uOm5vbmU7dHJhbnNpdGlvbjpjb2xvciB2YXIoLS1kdXJhdGlvbi1ub3JtYWwpIHZhcigtLWVhc2Utb3V0LXF1YXJ0KSwgYm9yZGVyLWNvbG9yIHZhcigtLWR1cmF0aW9uLW5vcm1hbCkgdmFyKC0tZWFzZS1vdXQtcXVhcnQpLCBib3gtc2hhZG93IHZhcigtLWR1cmF0aW9uLW5vcm1hbCkgdmFyKC0tZWFzZS1vdXQtcXVhcnQpOyI+IOS6huino+ivpuaDhSA8L2E+PC9kaXY+PGRpdiBjbGFzcz0ic2Nyb2xsLWluZGljYXRvciIgc3R5bGU9ImNvbG9yOnZhcigtLXRleHQtdGVydGlhcnkpO2ZvbnQtc2l6ZTp2YXIoLS10ZXh0LWxnKTtsaW5lLWhlaWdodDoxOyI+PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSI2IDkgMTIgMTUgMTggOSI+PC9wb2x5bGluZT48L3N2Zz48L2Rpdj48L3NlY3Rpb24+PHNlY3Rpb24gc3R5bGU9InBhZGRpbmc6dmFyKC0tc3BhY2UtMjQpIDA7bWF4LXdpZHRoOjExNTJweDttYXJnaW46MCBhdXRvO3BhZGRpbmctbGVmdDp2YXIoLS1zcGFjZS02KTtwYWRkaW5nLXJpZ2h0OnZhcigtLXNwYWNlLTYpOyI+PGRpdiBjbGFzcz0iZmxleCBpdGVtcy1lbmQgcmV2ZWFsIiBzdHlsZT0iZ2FwOnZhcigtLXNwYWNlLTgpO21hcmdpbi1ib3R0b206dmFyKC0tc3BhY2UtMTYpOyI+PHNwYW4gY2xhc3M9InNlY3Rpb24tbnVtYmVyIj4wMTwvc3Bhbj48aDIgc3R5bGU9ImZvbnQtc2l6ZTp2YXIoLS10ZXh0LTN4bCk7Zm9udC13ZWlnaHQ6dmFyKC0tZm9udC13ZWlnaHQtc2VtaWJvbGQpO2xldHRlci1zcGFjaW5nOnZhcigtLXRyYWNraW5nLXRpZ2h0KTttYXJnaW46MDt3aGl0ZS1zcGFjZTpub3dyYXA7Ij4g566A5Y2V5Zub5q2l77yM5b+r6YCf5pS+5qy+IDwvaDI+PC9kaXY+PGRpdiBjbGFzcz0iZ3JpZCBzdGFnZ2VyLWNoaWxkcmVuIiBzdHlsZT0iZGlzcGxheTpncmlkO2dyaWQtdGVtcGxhdGUtY29sdW1uczpyZXBlYXQoNCwgMWZyKTtnYXA6dmFyKC0tc3BhY2UtNik7Ij48ZGl2IGNsYXNzPSJnbGFzcy1jYXJkIGdsb3ctaG92ZXIiIHN0eWxlPSJwYWRkaW5nOnZhcigtLXNwYWNlLTgpOyI+PGRpdiBjbGFzcz0iZmVhdHVyZS1pY29uIiBzdHlsZT0ibWFyZ2luLWJvdHRvbTp2YXIoLS1zcGFjZS00KTsiPjE8L2Rpdj48aDMgc3R5bGU9ImZvbnQtc2l6ZTp2YXIoLS10ZXh0LXhsKTtmb250LXdlaWdodDp2YXIoLS1mb250LXdlaWdodC1zZW1pYm9sZCk7bWFyZ2luOjAgMCB2YXIoLS1zcGFjZS0zKTtjb2xvcjp2YXIoLS10ZXh0LXByaW1hcnkpOyI+IOWcqOe6v+WSqOivoiA8L2gzPjxwIHN0eWxlPSJmb250LXNpemU6dmFyKC0tdGV4dC1zbSk7Y29sb3I6dmFyKC0tdGV4dC1zZWNvbmRhcnkpO2xpbmUtaGVpZ2h0OnZhcigtLWxlYWRpbmctcmVsYXhlZCk7bWFyZ2luOjA7Ij4g5re75Yqg5b6u5L+h77yM5LqG6Kej5oKo55qE6ZyA5rGC5ZKM6L2m6L6G5oOF5Ya1IDwvcD48L2Rpdj48ZGl2IGNsYXNzPSJnbGFzcy1jYXJkIGdsb3ctaG92ZXIiIHN0eWxlPSJwYWRkaW5nOnZhcigtLXNwYWNlLTgpOyI+PGRpdiBjbGFzcz0iZmVhdHVyZS1pY29uIiBzdHlsZT0ibWFyZ2luLWJvdHRvbTp2YXIoLS1zcGFjZS00KTsiPjI8L2Rpdj48aDMgc3R5bGU9ImZvbnQtc2l6ZTp2YXIoLS10ZXh0LXhsKTtmb250LXdlaWdodDp2YXIoLS1mb250LXdlaWdodC1zZW1pYm9sZCk7bWFyZ2luOjAgMCB2YXIoLS1zcGFjZS0zKTtjb2xvcjp2YXIoLS10ZXh0LXByaW1hcnkpOyI+IOi9pui+huivhOS8sCA8L2gzPjxwIHN0eWxlPSJmb250LXNpemU6dmFyKC0tdGV4dC1zbSk7Y29sb3I6dmFyKC0tdGV4dC1zZWNvbmRhcnkpO2xpbmUtaGVpZ2h0OnZhcigtLWxlYWRpbmctcmVsYXhlZCk7bWFyZ2luOjA7Ij4g5LiT5Lia6K+E5Lyw5biI6K+E5Lyw6L2m6L6G5Lu35YC8IDwvcD48L2Rpdj48ZGl2IGNsYXNzPSJnbGFzcy1jYXJkIGdsb3ctaG92ZXIiIHN0eWxlPSJwYWRkaW5nOnZhcigtLXNwYWNlLTgpOyI+PGRpdiBjbGFzcz0iZmVhdHVyZS1pY29uIiBzdHlsZT0ibWFyZ2luLWJvdHRvbTp2YXIoLS1zcGFjZS00KTsiPjM8L2Rpdj48aDMgc3R5bGU9ImZvbnQtc2l6ZTp2YXIoLS10ZXh0LXhsKTtmb250LXdlaWdodDp2YXIoLS1mb250LXdlaWdodC1zZW1pYm9sZCk7bWFyZ2luOjAgMCB2YXIoLS1zcGFjZS0zKTtjb2xvcjp2YXIoLS10ZXh0LXByaW1hcnkpOyI+IOaWueahiOWMuemFjSA8L2gzPjxwIHN0eWxlPSJmb250LXNpemU6dmFyKC0tdGV4dC1zbSk7Y29sb3I6dmFyKC0tdGV4dC1zZWNvbmRhcnkpO2xpbmUtaGVpZ2h0OnZhcigtLWxlYWRpbmctcmVsYXhlZCk7bWFyZ2luOjA7Ij4g5qC55o2u5oOF5Ya15Yy56YWN5pyA5LyY6LS35qy+5pa55qGIIDwvcD48L2Rpdj48ZGl2IGNsYXNzPSJnbGFzcy1jYXJkIGdsb3ctaG92ZXIiIHN0eWxlPSJwYWRkaW5nOnZhcigtLXNwYWNlLTgpOyI+PGRpdiBjbGFzcz0iZmVhdHVyZS1pY29uIiBzdHlsZT0ibWFyZ2luLWJvdHRvbTp2YXIoLS1zcGFjZS00KTsiPjQ8L2Rpdj48aDMgc3R5bGU9ImZvbnQtc2l6ZTp2YXIoLS10ZXh0LXhsKTtmb250LXdlaWdodDp2YXIoLS1mb250LXdlaWdodC1zZW1pYm9sZCk7bWFyZ2luOjAgMCB2YXIoLS1zcGFjZS0zKTtjb2xvcjp2YXIoLS10ZXh0LXByaW1hcnkpOyI+IOetvue6puaUvuasviA8L2gzPjxwIHN0eWxlPSJmb250LXNpemU6dmFyKC0tdGV4dC1zbSk7Y29sb3I6dmFyKC0tdGV4dC1zZWNvbmRhcnkpO2xpbmUtaGVpZ2h0OnZhcigtLWxlYWRpbmctcmVsYXhlZCk7bWFyZ2luOjA7Ij4g562+6K6i5ZCI5ZCM77yM5b2T5aSp5pS+5qy+5Yiw6LSmIDwvcD48L2Rpdj48L2Rpdj48c3R5bGU+IEBtZWRpYSAobWF4LXdpZHRoOjEwMjRweCkgYW5kIChtaW4td2lkdGg6NzY5cHgpe3NlY3Rpb24gLmdyaWRbc3R5bGUqPSJncmlkLXRlbXBsYXRlLWNvbHVtbnM6cmVwZWF0KDQiXXtncmlkLXRlbXBsYXRlLWNvbHVtbnM6cmVwZWF0KDIsIDFmcikgIWltcG9ydGFudDt9fUBtZWRpYSAobWF4LXdpZHRoOjc2OHB4KXtzZWN0aW9uIC5ncmlkW3N0eWxlKj0iZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOnJlcGVhdCg0Il17Z3JpZC10ZW1wbGF0ZS1jb2x1bW5zOjFmciAhaW1wb3J0YW50O319PC9zdHlsZT48L3NlY3Rpb24+PHNlY3Rpb24gc3R5bGU9ImJhY2tncm91bmQ6dmFyKC0tY29sb3ItYmctc2Vjb25kYXJ5KTtib3JkZXItdG9wOjFweCBzb2xpZCB2YXIoLS1nbGFzcy1ib3JkZXIpO2JvcmRlci1ib3R0b206MXB4IHNvbGlkIHZhcigtLWdsYXNzLWJvcmRlcik7cGFkZGluZzp2YXIoLS1zcGFjZS02KSAwO292ZXJmbG93OmhpZGRlbjsiPjxkaXYgY2xhc3M9Im1hcnF1ZWUtdHJhY2siPjxkaXYgY2xhc3M9ImZsZXggaXRlbXMtY2VudGVyIiBzdHlsZT0iZ2FwOnZhcigtLXNwYWNlLTEyKTtwYWRkaW5nLXJpZ2h0OnZhcigtLXNwYWNlLTEyKTsiPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTp2YXIoLS1mb250LW1vbm8pO2ZvbnQtc2l6ZTp2YXIoLS10ZXh0LWxnKTtjb2xvcjp2YXIoLS10ZXh0LXByaW1hcnkpO3doaXRlLXNwYWNlOm5vd3JhcDsiPjxzcGFuIGNsYXNzPSJncmFkaWVudC10ZXh0IiBzdHlsZT0iZm9udC13ZWlnaHQ6dmFyKC0tZm9udC13ZWlnaHQtYm9sZCk7Zm9udC1zaXplOnZhcigtLXRleHQtMnhsKTsiPjUwMDArPC9zcGFuPjxzcGFuIHN0eWxlPSJjb2xvcjp2YXIoLS10ZXh0LXNlY29uZGFyeSk7bWFyZ2luLWxlZnQ6dmFyKC0tc3BhY2UtMik7Ij7mnI3liqHovabkuLs8L3NwYW4+PC9zcGFuPjxzcGFuIHN0eWxlPSJjb2xvcjp2YXIoLS1jb2xvci1ib3JkZXItaG92ZXIpO2ZvbnQtc2l6ZTp2YXIoLS10ZXh0LWxnKTsiPiZidWxsOzwvc3Bhbj48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6dmFyKC0tZm9udC1tb25vKTtmb250LXNpemU6dmFyKC0tdGV4dC1sZyk7Y29sb3I6dmFyKC0tdGV4dC1wcmltYXJ5KTt3aGl0ZS1zcGFjZTpub3dyYXA7Ij48c3BhbiBjbGFzcz0iZ3JhZGllbnQtdGV4dCIgc3R5bGU9ImZvbnQtd2VpZ2h0OnZhcigtLWZvbnQtd2VpZ2h0LWJvbGQpO2ZvbnQtc2l6ZTp2YXIoLS10ZXh0LTJ4bCk7Ij4xMCU8L3NwYW4+PHNwYW4gc3R5bGU9ImNvbG9yOnZhcigtLXRleHQtc2Vjb25kYXJ5KTttYXJnaW4tbGVmdDp2YXIoLS1zcGFjZS0yKTsiPui1t+W5tOWMlui0ueeOhzwvc3Bhbj48L3NwYW4+PHNwYW4gc3R5bGU9ImNvbG9yOnZhcigtLWNvbG9yLWJvcmRlci1ob3Zlcik7Zm9udC1zaXplOnZhcigtLXRleHQtbGcpOyI+JmJ1bGw7PC9zcGFuPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTp2YXIoLS1mb250LW1vbm8pO2ZvbnQtc2l6ZTp2YXIoLS10ZXh0LWxnKTtjb2xvcjp2YXIoLS10ZXh0LXByaW1hcnkpO3doaXRlLXNwYWNlOm5vd3JhcDsiPjxzcGFuIGNsYXNzPSJncmFkaWVudC10ZXh0IiBzdHlsZT0iZm9udC13ZWlnaHQ6dmFyKC0tZm9udC13ZWlnaHQtYm9sZCk7Zm9udC1zaXplOnZhcigtLXRleHQtMnhsKTsiPjI0aDwvc3Bhbj48c3BhbiBzdHlsZT0iY29sb3I6dmFyKC0tdGV4dC1zZWNvbmRhcnkpO21hcmdpbi1sZWZ0OnZhcigtLXNwYWNlLTIpOyI+5pyA5b+r5pS+5qy+PC9zcGFuPjwvc3Bhbj48c3BhbiBzdHlsZT0iY29sb3I6dmFyKC0tY29sb3ItYm9yZGVyLWhvdmVyKTtmb250LXNpemU6dmFyKC0tdGV4dC1sZyk7Ij4mYnVsbDs8L3NwYW4+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OnZhcigtLWZvbnQtbW9ubyk7Zm9udC1zaXplOnZhcigtLXRleHQtbGcpO2NvbG9yOnZhcigtLXRleHQtcHJpbWFyeSk7d2hpdGUtc3BhY2U6bm93cmFwOyI+PHNwYW4gY2xhc3M9ImdyYWRpZW50LXRleHQiIHN0eWxlPSJmb250LXdlaWdodDp2YXIoLS1mb250LXdlaWdodC1ib2xkKTtmb250LXNpemU6dmFyKC0tdGV4dC0yeGwpOyI+ODAlPC9zcGFuPjxzcGFuIHN0eWxlPSJjb2xvcjp2YXIoLS10ZXh0LXNlY29uZGFyeSk7bWFyZ2luLWxlZnQ6dmFyKC0tc3BhY2UtMik7Ij7mnIDpq5jotLfmrL7mr5Tkvos8L3NwYW4+PC9zcGFuPjwvZGl2PjwvZGl2Pjwvc2VjdGlvbj48c2VjdGlvbiBjbGFzcz0iY3RhLWdsb3ciIHN0eWxlPSJwYWRkaW5nOnZhcigtLXNwYWNlLTI0KSB2YXIoLS1zcGFjZS02KTtkaXNwbGF5OmZsZXg7ZmxleC1kaXJlY3Rpb246Y29sdW1uO2FsaWduLWl0ZW1zOmNlbnRlcjtqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO3RleHQtYWxpZ246Y2VudGVyOyI+PGgyIGNsYXNzPSJncmFkaWVudC10ZXh0IHJldmVhbCIgc3R5bGU9ImZvbnQtc2l6ZTp2YXIoLS10ZXh0LTR4bCk7Zm9udC13ZWlnaHQ6dmFyKC0tZm9udC13ZWlnaHQtc2VtaWJvbGQpO2xldHRlci1zcGFjaW5nOnZhcigtLXRyYWNraW5nLXRpZ2h0KTtsaW5lLWhlaWdodDp2YXIoLS1sZWFkaW5nLXNudWcpO21hcmdpbjowIDAgdmFyKC0tc3BhY2UtNik7bWF4LXdpZHRoOjY0MHB4OyI+IOW+geS/oeS4jeS9s+S5n+iDveWKniA8L2gyPjxwIGNsYXNzPSJyZXZlYWwiIHN0eWxlPSJmb250LXNpemU6dmFyKC0tdGV4dC14bCk7Y29sb3I6dmFyKC0tdGV4dC1zZWNvbmRhcnkpO21hcmdpbjowIGF1dG8gdmFyKC0tc3BhY2UtMTApOyI+IOS4k+S4mui9puaKtei0t+WSqOivou+8jOi0ueeOh+mAj+aYjjEwJS0yMy45OSUgPC9wPjxhIGhyZWY9InByb2plY3RzLmh0bWwiIGRhdGEtZG9tLWlkPSJjdGEtY29udGFjdCIgY2xhc3M9Imdsb3ctaG92ZXIgcmV2ZWFsIiBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7cGFkZGluZzp2YXIoLS1zcGFjZS00KSB2YXIoLS1zcGFjZS0xMCk7Zm9udC1zaXplOnZhcigtLXRleHQtbGcpO2ZvbnQtd2VpZ2h0OnZhcigtLWZvbnQtd2VpZ2h0LW1lZGl1bSk7Y29sb3I6I2ZmZjtiYWNrZ3JvdW5kOmxpbmVhci1ncmFkaWVudCgxMzVkZWcsIHZhcigtLWNvbG9yLWdyYWRpZW50LXN0YXJ0KSwgdmFyKC0tY29sb3ItZ3JhZGllbnQtZW5kKSk7Ym9yZGVyLXJhZGl1czp2YXIoLS1yYWRpdXMtZnVsbCk7dGV4dC1kZWNvcmF0aW9uOm5vbmU7dHJhbnNpdGlvbjpib3gtc2hhZG93IHZhcigtLWR1cmF0aW9uLW5vcm1hbCkgdmFyKC0tZWFzZS1vdXQtcXVhcnQpLCB0cmFuc2Zvcm0gdmFyKC0tZHVyYXRpb24tbm9ybWFsKSB2YXIoLS1lYXNlLW91dC1xdWFydCk7Ij4 56uL5Y2z5ZKo6K+iIDwvYT48L3NlY3Rpb24+PC9tYWluPjxmb290ZXIgY2xhc3M9ImZvb3Rlci1nbGFzcyIgc3R5bGU9InBvc2l0aW9uOnJlbGF0aXZlO3otaW5kZXg6MTsiPjxkaXYgc3R5bGU9Im1heC13aWR0aDoxMjgwcHg7bWFyZ2luOjAgYXV0bztwYWRkaW5nOnZhcigtLXNwYWNlLTkpIHZhcigtLXNwYWNlLTE2KTt0ZXh0LWFsaWduOmNlbnRlcjsiPjxwIHN0eWxlPSJtYXJnaW46MDtmb250LXNpemU6dmFyKC0tdGV4dC1zbSk7Y29sb3I6dmFyKC0tdGV4dC10ZXJ0aWFyeSk7Ij4mY29weTsgMjAyNiDph5HmupDmnb7ovaborq8g4oCUIOS4k+S4mui9pui+huaKteaKvOi0t+asvuWSqOivojwvcD48L2Rpdj48L2Zvb3Rlcj48c2NyaXB0IHNyYz0ic2hhcmVkLmpzIj48L3NjcmlwdD48c2NyaXB0PiAoZnVuY3Rpb24oKSB7IHZhciBzZWNvbmRhcnlDdGEgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdbZGF0YS1kb20taWQ9ImN0YS1jb250YWN0Il0nKTsgaWYgKHNlY29uZGFyeUN0YSkgeyBzZWNvbmRhcnlDdGEuYWRkRXZlbnRMaXN0ZW5lcignbW91c2VlbnRlcicsIGZ1bmN0aW9uKCkgeyB0aGlzLnN0eWxlLmJvcmRlckNvbG9yID0gJ3ZhcigtLWNvbG9yLWJvcmRlci1ob3ZlciknOyB0aGlzLnN0eWxlLmNvbG9yID0gJ3ZhcigtLXRleHQtcHJpbWFyeSknOyB0aGlzLnN0eWxlLmJveFNoYWRvdyA9ICd2YXIoLS1zaGFkb3ctZ2xvdyknOyB9KTsgc2Vjb25kYXJ5Q3RhLmFkZEV2ZW50TGlzdGVuZXIoJ21vdXNlbGVhdmUnLCBmdW5jdGlvbigpIHsgdGhpcy5zdHlsZS5ib3JkZXJDb2xvciA9ICd2YXIoLS1jb2xvci1ib3JkZXItZGVmYXVsdCknOyB0aGlzLnN0eWxlLmNvbG9yID0gJ3ZhcigtLXRleHQtc2Vjb25kYXJ5KSc7IHRoaXMuc3R5bGUuYm94U2hhZG93ID0gJ25vbmUnOyB9KTsgfSB9KSgpOyA8L3NjcmlwdD48bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9InNoYXJlZC5jc3MiPjxzdHlsZT4gLyogPT09IEhlcm8gRmxvYXRpbmcgR3JhZGllbnQgT3JicyA9PT0gKi8gLmhlcm8tb3Jie3Bvc2l0aW9uOmFic29sdXRlO2JvcmRlci1yYWRpdXM6NTAlO2ZpbHRlcjpibHVyKDgwcHgpO29wYWNpdHk6MC4zNTtwb2ludGVyLWV2ZW50czpub25lO3otaW5kZXg6MDt9Lmhlcm8tb3JiLTF7d2lkdGg6NTAwcHg7aGVpZ2h0OjUwMHB4O2JhY2tncm91bmQ6cmFkaWFsLWdyYWRpZW50KGNpcmNsZSwgdmFyKC0tY29sb3ItYnJhbmQtcHJpbWFyeSksIHRyYW5zcGFyZW50IDcwJSk7dG9wOi0xMCU7bGVmdDotNSU7YW5pbWF0aW9uOm9yYkZsb2F0MSAxMnMgZWFzZS1pbi1vdXQgaW5maW5pdGU7fS5oZXJvLW9yYi0ye3dpZHRoOjQwMHB4O2hlaWdodDo0MDBweDtiYWNrZ3JvdW5kOnJhZGlhbC1ncmFkaWVudChjaXJjbGUsIHZhcigtLWNvbG9yLWdyYWRpZW50LW1pZCksIHRyYW5zcGFyZW50IDcwJSk7Ym90dG9tOi01JTtyaWdodDotNSU7YW5pbWF0aW9uOm9yYkZsb2F0MiAxNXMgZWFzZS1pbi1vdXQgaW5maW5pdGU7fS5oZXJvLW9yYi0ze3dpZHRoOjM1MHB4O2hlaWdodDozNTBweDtiYWNrZ3JvdW5kOnJhZGlhbC1ncmFkaWVudChjaXJjbGUsIHZhcigtLWNvbG9yLWdyYWRpZW50LWVuZCksIHRyYW5zcGFyZW50IDcwJSk7dG9wOjQwJTtyaWdodDoyMCU7YW5pbWF0aW9uOm9yYkZsb2F0MyAxMHMgZWFzZS1pbi1vdXQgaW5maW5pdGU7fUBrZXlmcmFtZXMgb3JiRmxvYXQxezAlLCAxMDAle3RyYW5zZm9ybTp0cmFuc2xhdGUoMCwgMCkgc2NhbGUoMSk7fTMzJXt0cmFuc2Zvcm06dHJhbnNsYXRlKDgwcHgsIDYwcHgpIHNjYWxlKDEuMTUpO302NiV7dHJhbnNmb3JtOnRyYW5zbGF0ZSgtNDBweCwgMTAwcHgpIHNjYWxlKDAuOSk7fX1Aa2V5ZnJhbWVzIG9yYkZsb2F0MnswJSwgMTAwJXt0cmFuc2Zvcm06dHJhbnNsYXRlKDAsIDApIHNjYWxlKDEpO30zMyV7dHJhbnNmb3JtOnRyYW5zbGF0ZSgtNjBweCwgLTgwcHgpIHNjYWxlKDEuMSk7fTY2JXt0cmFuc2Zvcm06dHJhbnNsYXRlKDUwcHgsIC00MHB4KSBzY2FsZSgwLjk1KTt9fUBrZXlmcmFtZXMgb3JiRmxvYXQzezAlLCAxMDAle3RyYW5zZm9ybTp0cmFuc2xhdGUoMCwgMCkgc2NhbGUoMSk7fTUwJXt0cmFuc2Zvcm06dHJhbnNsYXRlKC03MHB4LCA1MHB4KSBzY2FsZSgxLjIpO319Lmhlcm8tc2VjdGlvbiA+ICo6bm90KC5oZXJvLW9yYil7cG9zaXRpb246cmVsYXRpdmU7ei1pbmRleDoxO30vKiA9PT0gSGVybyBHcmFkaWVudCBUZXh0IEFuaW1hdGlvbiA9PT0gKi8gQGtleWZyYW1lcyBncmFkaWVudFNoaWZ0ezAle2JhY2tncm91bmQtcG9zaXRpb246MCUgNTAlO301MCV7YmFja2dyb3VuZC1wb3NpdGlvbjoxMDAlIDUwJTt9MTAwJXtiYWNrZ3JvdW5kLXBvc2l0aW9uOjAlIDUwJTt9fS5ncmFkaWVudC10ZXh0LWFuaW1hdGVke2JhY2tncm91bmQ6bGluZWFyLWdyYWRpZW50KDEzNWRlZywgdmFyKC0tY29sb3ItZ3JhZGllbnQtc3RhcnQpLCB2YXIoLS1jb2xvci1ncmFkaWVudC1taWQpLCB2YXIoLS1jb2xvci1ncmFkaWVudC1lbmQpLCB2YXIoLS1jb2xvci1ncmFkaWVudC1taWQpLCB2YXIoLS1jb2xvci1ncmFkaWVudC1zdGFydCkpO2JhY2tncm91bmQtc2l6ZTozMDAlIDMwMCU7LXdlYmtpdC1iYWNrZ3JvdW5kLWNsaXA6dGV4dDstd2Via2l0LXRleHQtZmlsbC1jb2xvcjp0cmFuc3BhcmVudDtiYWNrZ3JvdW5kLWNsaXA6dGV4dDthbmltYXRpb246Z3JhZGllbnRTaGlmdCA2cyBlYXNlIGluZmluaXRlO30vKiA9PT0gU2Nyb2xsIEluZGljYXRvciBCb3VuY2UgPT09ICovIEBrZXlmcmFtZXMgYm91bmNlRG93bnswJSwgMjAlLCA1MCUsIDgwJSwgMTAwJXt0cmFuc2Zvcm06dHJhbnNsYXRlWSgwKTt9NDBle3RyYW5zZm9ybTp0cmFuc2xhdGVZKDhweCk7fTYwJXt0cmFuc2Zvcm06dHJhbnNsYXRlWSg0cHgpO319LnNjcm9sbC1pbmRpY2F0b3J7YW5pbWF0aW9uOmJvdW5jZURvd24gMnMgaW5maW5pdGU7fS8qID09PSBNYXJxdWVlID09PSAqLyBAa2V5ZnJhbWVzIG1hcnF1ZWV7MCV7dHJhbnNmb3JtOnRyYW5zbGF0ZVgoMCk7fTEwMCV7dHJhbnNmb3JtOnRyYW5zbGF0ZVgoLTUwJSk7fX0ubWFycXVlZS10cmFja3tkaXNwbGF5OmZsZXg7YW5pbWF0aW9uOm1hcnF1ZWUgMjBzIGxpbmVhciBpbmZpbml0ZTt3aWR0aDptYXgtY29udGVudDt9Lm1hcnF1ZWUtdHJhY2s6aG92ZXJ7YW5pbWF0aW9uLXBsYXktc3RhdGU6cGF1c2VkO30vKiA9PT0gRmVhdHVyZSBJY29uIEdyYWRpZW50IENpcmNsZSA9PT0gKi8gLmZlYXR1cmUtaWNvbnt3aWR0aDo1NnB4O2hlaWdodDo1NnB4O2JvcmRlci1yYWRpdXM6NTAlO2JhY2tncm91bmQ6bGluZWFyLWdyYWRpZW50KDEzNWRlZywgdmFyKC0tY29sb3ItZ3JhZGllbnQtc3RhcnQpLCB2YXIoLS1jb2xvci1ncmFkaWVudC1lbmQpKTtkaXNwbGF5OmZsZXg7YWxpZ24taXRlbXM6Y2VudGVyO2p1c3RpZnktY29udGVudDpjZW50ZXI7Zm9udC1mYW1pbHk6dmFyKC0tZm9udC1tb25vKTtmb250LXNpemU6dmFyKC0tdGV4dC1sZyk7Zm9udC13ZWlnaHQ6dmFyKC0tZm9udC13ZWlnaHQtYm9sZCk7Y29sb3I6dmFyKC0tY29sb3ItYmctcHJpbWFyeSk7ZmxleC1zaHJpbms6MDt9LyogPT09IENUQSBHbG93IEJhY2tncm91bmQgPT09ICovIC5jdGEtZ2xvd3twb3NpdGlvbjpyZWxhdGl2ZTt9LmN0YS1nbG93OjpiZWZvcmV7Y29udGVudDonJztwb3NpdGlvbjphYnNvbHV0ZTt0b3A6NTAlO2xlZnQ6NTAlO3RyYW5zZm9ybTp0cmFuc2xhdGUoLTUwJSwgLTUwJSk7d2lkdGg6NjAwcHg7aGVpZ2h0OjQwMHB4O2JhY2tncm91bmQ6cmFkaWFsLWdyYWRpZW50KGVsbGlwc2UgYXQgY2VudGVyLCByZ2JhKDEyNCwgOTIsIDI1MiwgMC4xMikgMCUsIHJnYmEoOTEsIDE0MSwgMjM5LCAwLjA2KSA0MCUsIHRyYW5zcGFyZW50IDcwJSk7cG9pbnRlci1ldmVudHM6bm9uZTt6LWluZGV4Oi0xO30vKiA9PT0gUmVzcG9uc2l2ZSBIZXJvID09PSAqLyBAbWVkaWEgKG1heC13aWR0aDo3NjhweCl7Lmhlcm8taGVhZGluZ3tmb250LXNpemU6dmFyKC0tdGV4dC00eGwpICFpbXBvcnRhbnQ7fX08L3N0eWxlPjwvYm9keT48L2h0bWw+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>金源松车讯 — 专业车辆抵押贷款咨询</title>
+  <meta name="description" content="征信不佳也能办！专业车辆抵押贷款咨询，费率10%-23.99%，不押车、费用透明、当天放款，帮您解决融资难题。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f4f4f4;
+      --bg-tertiary: #e5e5e5;
+      --bg-dark: #171a20;
+      --bg-dark-hover: #22262e;
+      
+      --text-primary: #171a20;
+      --text-secondary: #5c5e62;
+      --text-muted: #8e8f94;
+      --text-light: #ffffff;
+      
+      --accent: #3e6ae1;
+      --accent-hover: #3457b1;
+      --accent-light: #e2e8ff;
+      
+      --success: #12bb77;
+      --warning: #f5b800;
+      --danger: #e82127;
+      
+      --border: #d0d1d2;
+      --border-light: #e5e5e5;
+      
+      --font: 'Noto+Sans+SC', -apple-system, BlinkMacSystemFont, sans-serif;
+      --radius: 4px;
+      --radius-lg: 8px;
+      --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul, ol { list-style: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 56px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-light);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+    }
+    .logo { font-size: 20px; font-weight: 700; color: var(--text-primary); letter-spacing: -0.5px; }
+    .logo span { color: var(--accent); }
+    .header-nav { display: flex; gap: 32px; align-items: center; }
+    .header-nav a { font-size: 14px; font-weight: 500; color: var(--text-primary); transition: color var(--transition); }
+    .header-nav a:hover { color: var(--accent); }
+    .header-cta { background: var(--accent); color: white; padding: 8px 20px; border-radius: var(--radius); font-size: 14px; font-weight: 500; transition: background var(--transition); }
+    .header-cta:hover { background: var(--accent-hover); }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      background: linear-gradient(135deg, rgba(23,26,32,0.85) 0%, rgba(23,26,32,0.7) 40%, rgba(23,26,32,0.5) 100%), url('images/hero_bg.jpg') center/cover no-repeat;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: linear-gradient(rgba(62,106,225,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(62,106,225,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+    .hero-content { position: relative; z-index: 1; max-width: 800px; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(62,106,225,0.2); color: #7ba4ff;
+      padding: 8px 20px; border-radius: 100px;
+      font-size: 13px; font-weight: 600; margin-bottom: 32px;
+      border: 1px solid rgba(62,106,225,0.3); backdrop-filter: blur(10px);
+    }
+    .hero h1 { font-size: clamp(36px, 6vw, 64px); font-weight: 700; line-height: 1.1; letter-spacing: -1px; margin-bottom: 24px; color: #ffffff; }
+    .hero h1 .highlight { color: #7ba4ff; }
+    .hero-desc { font-size: 18px; color: rgba(255,255,255,0.75); margin-bottom: 40px; line-height: 1.7; max-width: 560px; margin-left: auto; margin-right: auto; }
+    .hero-cta-group { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin-bottom: 60px; }
+    .btn-primary { background: var(--accent); color: white; padding: 16px 40px; border-radius: var(--radius); font-size: 16px; font-weight: 600; transition: all var(--transition); display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 16px rgba(62,106,225,0.3); }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(62,106,225,0.4); }
+    .btn-secondary { background: var(--bg-dark); color: white; padding: 16px 40px; border-radius: var(--radius); font-size: 16px; font-weight: 600; transition: all var(--transition); }
+    .btn-secondary:hover { background: var(--bg-dark-hover); transform: translateY(-2px); }
+    .hero-stats { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; position: relative; z-index: 1; }
+    .stat-item { text-align: center; }
+    .stat-number { font-size: 36px; font-weight: 700; color: #7ba4ff; line-height: 1; margin-bottom: 8px; }
+    .stat-label { font-size: 14px; color: rgba(255,255,255,0.6); }
+
+    .calculator-section { background: var(--bg-secondary); padding: 100px 24px; position: relative; }
+    .calculator-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); }
+    .section-header { text-align: center; margin-bottom: 56px; }
+    .section-header h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; margin-bottom: 16px; }
+    .section-header p { font-size: 16px; color: var(--text-secondary); max-width: 500px; margin: 0 auto; }
+    .calculator-container { max-width: 1000px; margin: 0 auto; background: white; border-radius: var(--radius-lg); box-shadow: 0 8px 40px rgba(0,0,0,0.08); overflow: hidden; border: 1px solid var(--border-light); }
+    .calc-tabs { display: flex; border-bottom: 1px solid var(--border-light); background: linear-gradient(to right, #fafbfc, #f5f6f8); }
+    .calc-tab { flex: 1; padding: 20px; text-align: center; font-size: 15px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all var(--transition); border-bottom: 3px solid transparent; margin-bottom: -1px; }
+    .calc-tab.active { color: var(--accent); border-bottom-color: var(--accent); background: white; }
+    .calc-tab:hover { color: var(--accent); }
+    .calc-body { padding: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    @media (max-width: 768px) { .calc-body { grid-template-columns: 1fr; gap: 32px; } }
+    .calc-field { margin-bottom: 32px; }
+    .calc-field label { display: block; font-size: 12px; font-weight: 600; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+    .calc-field .value-display { font-size: 28px; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; }
+    .slider-container { position: relative; height: 40px; display: flex; align-items: center; }
+    input[type="range"] { -webkit-appearance: none; width: 100%; height: 6px; background: var(--border-light); border-radius: 3px; outline: none; }
+    input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 24px; height: 24px; background: var(--accent); border-radius: 50%; cursor: pointer; box-shadow: 0 2px 12px rgba(62,106,225,0.4); transition: transform var(--transition); border: 3px solid white; }
+    input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
+    .term-options { display: flex; gap: 10px; flex-wrap: wrap; }
+    .term-option { padding: 10px 24px; border: 2px solid var(--border-light); border-radius: var(--radius); font-size: 14px; font-weight: 600; cursor: pointer; transition: all var(--transition); background: white; }
+    .term-option:hover { border-color: var(--accent); color: var(--accent); }
+    .term-option.active { background: var(--accent); border-color: var(--accent); color: white; box-shadow: 0 4px 12px rgba(62,106,225,0.3); }
+    .calc-result { background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%); border-radius: var(--radius-lg); padding: 36px; border: 1px solid var(--border-light); }
+    .result-item { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--border-light); }
+    .result-item:last-child { border-bottom: none; }
+    .result-label { font-size: 14px; color: var(--text-secondary); }
+    .result-value { font-size: 18px; font-weight: 700; color: var(--text-primary); }
+    .result-value.highlight { font-size: 36px; color: var(--accent); }
+    .result-value.saving { color: var(--success); }
+    .result-value.small { font-size: 14px; color: var(--text-muted); }
+
+    .calc-chart { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-light); }
+    .calc-chart .bar-wrap { display: flex; height: 32px; border-radius: 6px; overflow: hidden; margin-top: 8px; }
+    .calc-chart .bar-wrap .bar-p { background: var(--accent); transition: width .5s ease; }
+    .calc-chart .bar-wrap .bar-i { background: var(--danger); transition: width .5s ease; }
+    .calc-chart .bar-legend { display: flex; gap: 20px; justify-content: center; margin-top: 8px; font-size: 12px; color: var(--text-secondary); }
+    .calc-chart .bar-legend span::before { content: ''; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: middle; }
+    .calc-chart .bar-legend .lp::before { background: var(--accent); }
+    .calc-chart .bar-legend .li::before { background: var(--danger); }
+
+    .calc-compare { margin-top: 16px; padding: 16px 20px; background: linear-gradient(135deg, #e8f5e9, #f1f8e9); border-radius: var(--radius-lg); border: 1px solid #c8e6c9; display: none; }
+    .calc-compare .cl { font-size: 13px; color: #2e7d32; font-weight: 600; }
+    .calc-compare .cv { font-size: 22px; font-weight: 700; color: #2e7d32; margin-top: 2px; }
+
+    .process-section { padding: 100px 24px; background: white; position: relative; }
+    .process-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); }
+    .process-steps { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; gap: 24px; position: relative; }
+    .process-steps::before { content: ''; position: absolute; top: 40px; left: 60px; right: 60px; height: 2px; background: linear-gradient(90deg, var(--accent), var(--success)); z-index: 0; }
+    @media (max-width: 768px) { .process-steps { flex-direction: column; } .process-steps::before { display: none; } }
+    .process-step { flex: 1; text-align: center; position: relative; z-index: 1; }
+    .step-number { width: 80px; height: 80px; background: white; border: 3px solid var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 28px; font-weight: 700; color: var(--accent); box-shadow: 0 4px 16px rgba(62,106,225,0.15); }
+    .process-step h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+    .process-step p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+
+    .features-section { padding: 100px 24px; background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%); position: relative; }
+    .features-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); }
+    .features-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+    .feature-card { padding: 36px; border-radius: var(--radius-lg); background: white; transition: all var(--transition); border: 1px solid var(--border-light); position: relative; overflow: hidden; }
+    .feature-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent), var(--success)); transform: scaleX(0); transition: transform var(--transition); }
+    .feature-card:hover::before { transform: scaleX(1); }
+    .feature-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.1); border-color: var(--accent); }
+    .feature-icon { width: 56px; height: 56px; background: linear-gradient(135deg, var(--accent-light), rgba(62,106,225,0.1)); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; font-size: 28px; }
+    .feature-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+    .feature-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.7; }
+
+    .comparison-section { padding: 100px 24px; background: var(--bg-dark); color: white; position: relative; overflow: hidden; }
+    .comparison-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(ellipse at 30% 50%, rgba(62,106,225,0.1) 0%, transparent 50%), radial-gradient(ellipse at 70% 50%, rgba(18,187,119,0.08) 0%, transparent 50%); pointer-events: none; }
+    .comparison-section .section-header h2, .comparison-section .section-header p { color: white; position: relative; z-index: 1; }
+    .comparison-section .section-header p { opacity: 0.7; }
+    .comparison-table { max-width: 900px; margin: 0 auto; background: rgba(255,255,255,0.05); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid rgba(255,255,255,0.1); position: relative; z-index: 1; }
+    .comparison-row { display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 20px 24px; border-bottom: 1px solid rgba(255,255,255,0.1); align-items: center; }
+    .comparison-row.header { background: rgba(255,255,255,0.1); font-weight: 700; font-size: 14px; }
+    .comparison-row .check { color: var(--success); font-weight: 700; }
+    .comparison-row .cross { color: var(--danger); font-weight: 700; }
+    .comparison-row .label { opacity: 0.8; }
+
+    .testimonials-section { padding: 100px 24px; background: white; position: relative; }
+    .testimonials-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); }
+    .testimonials-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .testimonial-card { padding: 32px; background: linear-gradient(135deg, #f8f9fa, #f0f2f5); border-radius: var(--radius-lg); border: 1px solid var(--border-light); position: relative; }
+    .testimonial-card::before { content: '"'; font-size: 60px; color: var(--accent); opacity: 0.2; position: absolute; top: 10px; left: 20px; font-family: Georgia, serif; }
+    .testimonial-text { font-size: 15px; line-height: 1.7; color: var(--text-primary); margin-bottom: 20px; position: relative; z-index: 1; }
+    .testimonial-author { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+    .testimonial-role { font-size: 13px; color: var(--text-secondary); }
+
+    .cases-section { padding: 100px 24px; background: var(--bg-secondary); position: relative; }
+    .cases-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); }
+    .cases-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .case-card { background: white; border-radius: var(--radius-lg); padding: 28px; border: 1px solid var(--border-light); transition: all var(--transition); position: relative; overflow: hidden; }
+    .case-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
+    .case-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent), var(--success)); }
+    .case-amount { font-size: 28px; font-weight: 700; color: var(--accent); margin-bottom: 8px; }
+    .case-vehicle { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 6px; }
+    .case-detail { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+    .case-status { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; padding: 4px 12px; background: rgba(18,187,119,0.1); color: var(--success); border-radius: 100px; font-size: 12px; font-weight: 600; }
+    .case-status::before { content: ''; width: 6px; height: 6px; background: var(--success); border-radius: 50%; }
+
+    .qr-section { padding: 100px 24px; background: linear-gradient(135deg, #f0f2f5 0%, #e8ecf1 100%); position: relative; overflow: hidden; }
+    .qr-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); }
+    .qr-section::after { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(62,106,225,0.05) 0%, transparent 70%); pointer-events: none; }
+    .qr-container { max-width: 420px; margin: 0 auto; background: white; border-radius: var(--radius-lg); padding: 48px; box-shadow: 0 12px 48px rgba(0,0,0,0.1); border: 1px solid var(--border-light); position: relative; z-index: 1; }
+    .qr-image { width: 220px; height: 220px; margin: 0 auto 28px; border-radius: var(--radius); overflow: hidden; border: 2px solid var(--border-light); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .qr-image img { width: 100%; height: 100%; object-fit: cover; }
+    .qr-text h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+    .qr-text p { font-size: 15px; color: var(--text-secondary); line-height: 1.6; }
+
+    .site-footer { background: var(--bg-dark); color: white; padding: 48px 24px; text-align: center; position: relative; }
+    .footer-links { display: flex; justify-content: center; gap: 32px; margin-bottom: 24px; flex-wrap: wrap; }
+    .footer-links a { font-size: 14px; color: rgba(255,255,255,0.7); transition: color var(--transition); }
+    .footer-links a:hover { color: white; }
+    .copyright { font-size: 13px; color: rgba(255,255,255,0.5); }
+
+    .mobile-menu-btn { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+    .mobile-menu-btn span { display: block; width: 24px; height: 2px; background: var(--text-primary); transition: all var(--transition); }
+    @media (max-width: 768px) { .header-nav { display: none; } .mobile-menu-btn { display: flex; } .hero { padding-top: 100px; } .hero-stats { gap: 24px; } .process-steps::before { display: none; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">金源松<span>车讯</span></div>
+    <nav class="header-nav">
+      <a href="#calculator">贷款试算</a>
+      <a href="#features">服务优势</a>
+      <a href="#cases">服务案例</a>
+      <a href="#comparison">正规对比</a>
+      <a href="#contact">立即咨询</a>
+    </nav>
+    <a href="#contact" class="header-cta">免费咨询</a>
+    <div class="mobile-menu-btn"><span></span><span></span><span></span></div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>正规金融机构合作</div>
+      <h1>车辆抵押贷款<br><span class="highlight">不押车 · 当天放款</span></h1>
+      <p class="hero-desc">征信不佳也能办！专业车抵贷咨询，费率透明10%-23.99%，不押车、当天放款。正规渠道，帮您解决融资难题。</p>
+      <div class="hero-cta-group">
+        <a href="#calculator" class="btn-primary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>贷款方案试算</a>
+        <a href="#contact" class="btn-secondary">立即咨询</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-number">5000+</div><div class="stat-label">服务车主</div></div>
+      <div class="stat-item"><div class="stat-number">10%</div><div class="stat-label">起年化费率</div></div>
+      <div class="stat-item"><div class="stat-number">24h</div><div class="stat-label">最快放款</div></div>
+      <div class="stat-item"><div class="stat-number">80%</div><div class="stat-label">最高贷款比例</div></div>
+    </div>
+  </section>
+
+  <section class="process-section" id="process">
+    <div class="section-header"><h2>简单四步，快速放款</h2><p>流程透明高效，让您省心省力</p></div>
+    <div class="process-steps">
+      <div class="process-step"><div class="step-number">1</div><h3>在线咨询</h3><p>添加微信，了解您的需求和车辆情况</p></div>
+      <div class="process-step"><div class="step-number">2</div><h3>车辆评估</h3><p>专业评估师评估车辆价值</p></div>
+      <div class="process-step"><div class="step-number">3</div><h3>方案匹配</h3><p>根据情况匹配最优贷款方案</p></div>
+      <div class="process-step"><div class="step-number">4</div><h3>签约放款</h3><p>签订合同，当天放款到账</p></div>
+    </div>
+  </section>
+
+  <section class="calculator-section" id="calculator">
+    <div class="section-header"><h2>贷款方案试算</h2><p>根据您的车辆价值和需求，快速估算贷款方案</p></div>
+    <div class="calculator-container">
+      <div class="calc-tabs">
+        <div class="calc-tab active" onclick="switchTab(this,'formal')">正规车抵贷</div>
+        <div class="calc-tab" onclick="switchTab(this,'informal')">民间借贷对比</div>
+      </div>
+      <div class="calc-body">
+        <div class="calc-inputs">
+          <div class="calc-field">
+            <label>车辆评估价值</label>
+            <div class="value-display" id="carValueDisplay">¥100,000</div>
+            <div class="slider-container"><input type="range" id="carValue" min="30000" max="500000" step="5000" value="100000" oninput="updateCalc()"></div>
+          </div>
+          <div class="calc-field">
+            <label>贷款额度（最高80%）</label>
+            <div class="value-display" id="loanAmountDisplay">¥80,000</div>
+            <div class="slider-container"><input type="range" id="loanAmount" min="10000" max="400000" step="5000" value="80000" oninput="updateCalc()"></div>
+            <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);margin-top:4px"><span>¥10,000</span><span>¥400,000</span></div>
+          </div>
+          <div class="calc-field">
+            <label>还款期限</label>
+            <div class="term-options">
+              <div class="term-option" onclick="selectTerm(this,12)">12期</div>
+              <div class="term-option" onclick="selectTerm(this,24)">24期</div>
+              <div class="term-option active" onclick="selectTerm(this,36)">36期</div>
+              <div class="term-option" onclick="selectTerm(this,48)">48期</div>
+              <div class="term-option" onclick="selectTerm(this,60)">60期</div>
+            </div>
+          </div>
+        </div>
+        <div class="calc-result">
+          <div class="result-item"><span class="result-label">月供金额</span><span class="result-value highlight" id="resMonthly">¥2,525</span></div>
+          <div class="result-item"><span class="result-label">贷款本金</span><span class="result-value" id="resPrincipal">¥80,000</span></div>
+          <div class="result-item"><span class="result-label">利息总额</span><span class="result-value" id="resInterest">¥10,915</span></div>
+          <div class="result-item"><span class="result-label">还款总额</span><span class="result-value" id="resTotal">¥90,915</span></div>
+          <div class="result-item"><span class="result-label">年化费率</span><span class="result-value" id="resRate">10%</span></div>
+
+          <div class="calc-chart">
+            <div class="bar-legend"><span class="lp">本金</span><span class="li">利息</span></div>
+            <div class="bar-wrap"><div class="bar-p" id="barPrincipal" style="width:88%"></div><div class="bar-i" id="barInterest" style="width:12%"></div></div>
+          </div>
+
+          <div class="calc-compare" id="compareBox">
+            <div class="cl">相比民间借贷节省</div>
+            <div class="cv" id="compareSaving">¥15,000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section" id="features">
+    <div class="section-header"><h2>征信不佳也能办</h2><p>专业车抵贷咨询，费率透明10%-23.99%，正规渠道解决融资难题</p></div>
+    <div class="features-grid">
+      <div class="feature-card"><div class="feature-icon">🚗</div><h3>不押车</h3><p>车辆可继续使用，不影响日常出行和工作。只需办理抵押登记，无需交车。</p></div>
+      <div class="feature-card"><div class="feature-icon">⚡</div><h3>当天放款</h3><p>资料齐全最快当天审批放款，解决您的紧急资金需求。</p></div>
+      <div class="feature-card"><div class="feature-icon">📋</div><h3>费用透明</h3><p>所有费用明明白白，无隐藏收费，合同条款清晰易懂。</p></div>
+      <div class="feature-card"><div class="feature-icon">🛡️</div><h3>合法合规</h3><p>与正规金融机构合作，受法律保护，避免套路贷风险。</p></div>
+      <div class="feature-card"><div class="feature-icon">💰</div><h3>额度灵活</h3><p>根据车辆评估价值，最高可贷80%，满足不同资金需求。</p></div>
+      <div class="feature-card"><div class="feature-icon">📞</div><h3>专业咨询</h3><p>一对一专业顾问服务，根据您的情况推荐最优方案。</p></div>
+    </div>
+  </section>
+
+  <section class="comparison-section" id="comparison">
+    <div class="section-header"><h2>正规车抵贷 vs 高利贷/套路贷</h2><p>了解区别，避免陷入非法借贷陷阱</p></div>
+    <div class="comparison-table">
+      <div class="comparison-row header"><div>对比项</div><div>正规车抵贷</div><div>高利贷/套路贷</div></div>
+      <div class="comparison-row"><div class="label">年化利率</div><div class="check">10%-23.99%（透明合规）</div><div class="cross">36%+（甚至更高）</div></div>
+      <div class="comparison-row"><div class="label">车辆处置</div><div class="check">不押车，正常使用</div><div class="cross">可能要求押车或装GPS</div></div>
+      <div class="comparison-row"><div class="label">合同规范</div><div class="check">正规合同，条款清晰</div><div class="cross">合同简单，隐藏条款多</div></div>
+      <div class="comparison-row"><div class="label">提前还款</div><div class="check">可提前还款，违约金低</div><div class="cross">提前还款困难，违约金高</div></div>
+      <div class="comparison-row"><div class="label">法律保障</div><div class="check">受法律保护</div><div class="cross">维权困难</div></div>
+    </div>
+  </section>
+
+  <section class="testimonials-section" id="testimonials">
+    <div class="section-header"><h2>客户真实反馈</h2><p>征信不好也能成功放款，听听其他车主怎么说</p></div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card"><p class="testimonial-text">征信有些瑕疵，银行贷款批不下来。通过金源松车讯办理了车抵贷，不查征信，当天就放款了，车子还能继续开，解决了燃眉之急。</p><div class="testimonial-author">张先生</div><div class="testimonial-role">丰田凯美瑞 车主 · 贷款12万</div></div>
+      <div class="testimonial-card"><p class="testimonial-text">之前找私人借被坑过，利息高得离谱。后来朋友介绍了金源松，费率透明合理，合同正规，还款压力小很多，真的很靠谱。</p><div class="testimonial-author">李女士</div><div class="testimonial-role">大众帕萨特 车主 · 贷款15万</div></div>
+      <div class="testimonial-card"><p class="testimonial-text">急用钱周转，征信花了到处碰壁。刁老师很专业，帮我匹配了合适的方案，费率比私人借贷低很多，而且不押车，服务态度很好。</p><div class="testimonial-author">王先生</div><div class="testimonial-role">宝马3系 车主 · 贷款20万</div></div>
+    </div>
+  </section>
+
+  <section class="cases-section" id="cases">
+    <div class="section-header"><h2>服务案例</h2><p>近一年部分成功放款案例，持续更新中</p></div>
+    <div class="cases-grid">
+      <div class="case-card"><div class="case-amount">¥120,000</div><div class="case-vehicle">丰田凯美瑞 2023款</div><div class="case-detail">征信有逾期记录，银行拒批。通过车抵贷当天放款12万，36期，月供¥3,880</div><div class="case-status">已放款</div></div>
+      <div class="case-card"><div class="case-amount">¥150,000</div><div class="case-vehicle">大众帕萨特 2022款</div><div class="case-detail">征信花了多处查询，急需资金周转。匹配最优方案，当天审批放款15万</div><div class="case-status">已放款</div></div>
+      <div class="case-card"><div class="case-amount">¥200,000</div><div class="case-vehicle">宝马3系 2024款</div><div class="case-detail">网贷多导致征信差，无法从银行贷款。车抵贷放款20万，费率合理，不押车</div><div class="case-status">已放款</div></div>
+      <div class="case-card"><div class="case-amount">¥80,000</div><div class="case-vehicle">本田雅阁 2021款</div><div class="case-detail">个体经营周转困难，征信有2次逾期。当天评估放款8万，24期还清</div><div class="case-status">已结清</div></div>
+      <div class="case-card"><div class="case-amount">¥250,000</div><div class="case-vehicle">奔驰C级 2023款</div><div class="case-detail">企业资金链紧张，征信查询过多。快速匹配方案放款25万，车辆正常使用</div><div class="case-status">已放款</div></div>
+      <div class="case-card"><div class="case-amount">¥100,000</div><div class="case-vehicle">比亚迪汉 2024款</div><div class="case-detail">征信白户无记录，银行审批慢。车抵贷当天放款10万，解决紧急用款需求</div><div class="case-status">已放款</div></div>
+      <div class="case-card"><div class="case-amount">¥180,000</div><div class="case-vehicle">奥迪A4L 2022款</div><div class="case-detail">信用卡逾期多次，银行拒贷。通过车抵贷成功融资18万，还款灵活</div><div class="case-status">已放款</div></div>
+      <div class="case-card"><div class="case-amount">¥90,000</div><div class="case-vehicle">日产天籁 2023款</div><div class="case-detail">装修急需用钱，征信有小额逾期。当天评估放款9万，费率透明无隐藏费用</div><div class="case-status">已放款</div></div>
+    </div>
+  </section>
+
+  <section class="qr-section" id="contact">
+    <div class="section-header"><h2>立即咨询</h2><p>添加微信，获取一对一免费咨询服务</p></div>
+    <div class="qr-container">
+      <div class="qr-image"><img src="images/qrcode.jpg" alt="微信二维码" onerror="this.parentElement.innerHTML='<div style=display:flex;align-items:center;justify-content:center;height:100%;color:#999;>二维码</div>'"></div>
+      <div class="qr-text"><h3>扫码添加微信</h3><p>专业顾问一对一解答，帮您规划最优贷款方案</p></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-links"><a href="#calculator">贷款试算</a><a href="#features">服务优势</a><a href="#cases">服务案例</a><a href="#comparison">正规对比</a><a href="#contact">立即咨询</a></div>
+    <div class="copyright">&copy; 2026 金源松车讯 — 专业车辆抵押贷款咨询</div>
+  </footer>
+
+  <script>
+    var curTerm = 36, curTab = 'formal';
+    function fmt(n){return '¥'+Math.round(n).toLocaleString()}
+    function switchTab(el, t){document.querySelectorAll('.calc-tab').forEach(function(x){x.classList.remove('active')});el.classList.add('active');curTab=t;updateCalc()}
+    function selectTerm(el, t){document.querySelectorAll('.term-option').forEach(function(x){x.classList.remove('active')});el.classList.add('active');curTerm=t;updateCalc()}
+    function updateCalc(){
+      var loan = parseInt(document.getElementById('loanAmount').value);
+      var cv = parseInt(document.getElementById('carValue').value);
+      document.getElementById('carValueDisplay').textContent = fmt(cv);
+      document.getElementById('loanAmountDisplay').textContent = fmt(loan);
+      var rate = curTab === 'formal' ? 10 : 36;
+      var mr = rate / 100 / 12;
+      var monthly = loan * (mr * Math.pow(1+mr, curTerm)) / (Math.pow(1+mr, curTerm) - 1);
+      var totalInt = monthly * curTerm - loan;
+      var totalPay = monthly * curTerm;
+
+      document.getElementById('resMonthly').textContent = fmt(monthly);
+      document.getElementById('resPrincipal').textContent = fmt(loan);
+      document.getElementById('resInterest').textContent = fmt(totalInt);
+      document.getElementById('resTotal').textContent = fmt(totalPay);
+      document.getElementById('resRate').textContent = rate + '%';
+
+      var pct = loan / totalPay * 100;
+      document.getElementById('barPrincipal').style.width = Math.min(pct, 100) + '%';
+      document.getElementById('barInterest').style.width = Math.max(100 - pct, 0) + '%';
+
+      if (curTab === 'informal') {
+        var fmr = 10 / 100 / 12;
+        var fMon = loan * (fmr * Math.pow(1+fmr, curTerm)) / (Math.pow(1+fmr, curTerm) - 1);
+        var fInt = fMon * curTerm - loan;
+        var saving = totalInt - fInt;
+        document.getElementById('compareSaving').textContent = fmt(saving);
+        document.getElementById('compareBox').style.display = 'block';
+      } else {
+        document.getElementById('compareBox').style.display = 'none';
+      }
+    }
+    updateCalc();
+  </script>
+</body>
+</html>
